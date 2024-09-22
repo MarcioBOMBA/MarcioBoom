@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --base-color: #4F75FF;
+    --primary-color: #04364A;
+    --secondary-color: #176B87;
+    --ligther-color: #64CCC5;
+    --complementary-color: #6439FF;
+    --dark-color: #1E201E;
+
+    --redhat: "Red Hat Display", system-ui;
+    --montserrat: "Montserrat", system-ui;
+    --dmsans: "DM Sans", system-ui;
+    --roboto: "Roboto", system-ui;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--dark-color);
+    color: white;
+    font-family: var(--roboto);
+}
+a{
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px;
+    height: 10vh;
+}
+header h1 {
+    font-size: 32px;
+    font-family: var(--redhat);
+}
+header > nav {
+    display: flex;
+    font-family: var(--redhat);
+}
+header > nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+    margin-right: 40px;
+}
+header nav a{
+    transition: 0.2s;
+    font-size: 18px;
+    text-decoration: none;
+}
+header nav > a{
+    background-color: var(--base-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #4f75ff40;
+}
+header nav > a:hover{
+    background-color: var(--complementary-color);
+}
